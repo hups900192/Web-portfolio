@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+  background-image: url("../img/background.jpg");
+  background-size: 100% auto ;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+/*....................*/
+.wrap{
+  font-family: #e0e0e0;
+	width: 600px;
+	background: #a3d1d1;
+	margin: 100px auto;
+	padding: 25px;
+	text-align: center;
+  border-radius: 10px;
+}
+.content{
+  width: 350px;
+  float: right;
+  text-align: left;
+}
+.commute li{
+  font-size: 13px;
+  padding-bottom: 16px;
+}
+.commute input{
+  margin-left: 5px;
+}
+.img{
+  float: left;
+  border-radius: 50px;
+}
+/*....................*/
+.searchdiv{
+  float: right;
+}
+.searchvalue{
+  font-size: 12px;
+  float: left;
+  width: 100px;
+  height: 16px;
+  background-color: #d1e9e9;
+  border: none;
+}
+.search{
+  width: 14px;
+  float: left;
+  background-image: url("../img/search.png");
+  background-size: 100% ;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-color: #6fb7b7;
+  margin-left: 3px;
+  border: none;   
+}
+.search:hover{
+  background-color: #b3d9d9;
+}
+/*....................*/
+
+.clearfix{
+  overflow: auto;
+  zoom: 1;
+}
+
+.clearfix2{
+  clear: both;
+}
+/*....................*/
+.button{
+  width: 100%;
+  float: left;
+}
+.button li{
+  float: left;
+  margin: 0px 25px 0 0;
+}
+.button input:hover{
+  background-color: #003e3e;
+  color:  #fcfcfc;
+}
+.button input{
+  padding: 4px 0 4px  0;
+  width: 60px;
+  font-size: 12px;
+  font-family: monospace;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  border: 1px ;
+  color: #009393;
+}
+/*....................*/
+.listdiv{
+  margin: auto;
+  text-align: left;
+  width: 100%;
+  float: left;
+}
+.list{
+  float:left;
+  width: 100%;
+  margin-top: 20px;
+}
+.list th{
+  font-weight: bold;    
+}
+.list  tr{
+  line-height: 30px; 
+  border: 1px;
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+}
+.chkbxdiv{
+  width: 10%;
+}
+.emaildiv{
+  width: 40%;
+}
+/*....................*/

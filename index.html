@@ -2,59 +2,223 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>聯絡資訊簿</title>
-	 <link rel="stylesheet" href="css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Tim's Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-2.2.3.min.js"></script>
+  	
 </head>
 <body>
-	<div class="wrap clearfix">
-		<div class="img">
-	 		<img class="logo" src="img/logo.jpg">	
-	 	</div>
-	 	<div class="content">
-	 		<div class="searchdiv">
-	 			<input type="text" class="searchvalue"  value="" placeholder="搜尋">
-	 			<input type="button" class="search" value="">
-	 		</div>
-	 		<div class="commute">
-				<font> 
-					<ul>
-	 					<li>名字
-	 						<input type="text" class="name" placeholder="王小明" value="">
-	         	
-						</li>
-	 					<li>電話
-	 						<input type="tel" class="phone" placeholder="09XXXXXXXX" value="">
-	 					</li> 
-	 					<li>信箱
-	 						<input type="email" class="email" placeholder="XXX@gmail.com" value="">
-	 					</li> 	
-					</ul>
-				</font>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo">
+				<a href="#home">
+					<img src="img/logo.png">
+					<h2>TIM PORTFOLIO</h2>
+				</a>
 			</div>
-			<div class="button">
+			<div class="head-button">
+				<img src="img/icons/select.png">
+			</div>
+			<div class="menu">
 				<ul>
-					<li><input type="button" class="send" value="新 增"></li>
-					<li><input type="button" class="del" value="刪 除"></li>
-					<li><input type="button" class="edit" value="修 改"></li>
-					<li><input type="reset" class="reset" value="清空"></li>
+					<li><a href="#about1">ABOUT</a></li>
+					<li><a href="#resume">RESUME</a></li>
+					<li><a href="#skill">SKILL</a></li>
+					<li><a href="#portofolio">PORTFOLIO</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="clearfix2"></div>
-		<div class="listdiv">
-			<table class="list">
-			<tr>
-				<th>名字</th>
-				<th>電話</th>	
-			</tr>
-	 		<tr >
-	 			<td>王小名</td>
-	 			<td>0912345678</td>
-	 		</tr>	
-	 	</table>
+
+		<div class="home" id="home">
+			<h1>Hello! I'm Tim</h1>
+			<p>Welcome to my portfolio</p>
 		</div>
-	
+
+		<div class="clearfix"></div>
+
+		<div class="about" id="about1">
+			<div class="photo">
+				<img src="img/photo.png" >
+			</div>
+			<h3>林冠廷 TIM-LIN</h3>
+			<div class="about-content">
+				<ul class="about-imformation">
+					<li class="about-mail">
+						<img src="img/icons/mail.png" >
+						<a href="mailto:hups900192@gmail.com">hups900192@gmail.com</a>
+					</li>
+					<li class="about-phone">
+						<img src="img/icons/mobile.png" >
+						<span>0938713358</span>
+					</li>
+					<li class="about-city">
+						<img src="img/icons/location.png" >
+						<span>City,Taichung</span>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+				<p>
+					我是林冠廷畢業於明志科技大學工業工程與管理系，學習期間修了網頁程式設計的課程，啟蒙了投入網頁發展的念頭。
+				</p>
+				<p>
+					畢業後利用下班閒暇時間，透過購買書籍及線上課程自學前端相關技術，在自學前端技術的日子一開始也遇到困難挫折但並沒有放棄用挑戰的態度作為學習的動力，每當完成一個專案就是一種經驗累積的成長。
+				</p>
+			</div>
+		</div>
+
+		<div class="resume" id="resume">
+			<div class="Education">
+				<ul class="mcut">
+					<h3>學歷</h3>
+					<h4>明志科技大學-工業工程與管理系</h4>
+					<li>資訊相關課程:程式設計(JAVA)、資料庫管理、網頁程式設計、C#.NET程式設計、計算機概論</li>
+					<li><span>專題:社交 APP喜好度因子分析<span>
+						<p>
+							研究市面上的社交型 Apps為何能獲得大眾喜愛，使用 KMO及巴氏球型檢定得知問卷結果適合進行因素分析，並藉由分析萃取出5個主要因素「App方便性」、「同儕影響」、「App社交功能性」、「社交的隱私性」、「App的串聯性」。在使用卡方檢定後得知因素的重要程度符合排行榜的名次趨勢，最後藉由權重較高者，做為設計新 App的重點改善及導向。
+						</p>
+					</li>
+					</ul>
+				<ul class="FPC">
+					<h3>實習經歷</h3>
+					<h4>台塑-資材課實習生</h4>
+					<li>自動化倉儲作業管理</li>
+					<li>出貨訂單及發貨作業</li>
+					<li>庫存、工卡統計管理</li>
+					<li>ERP作業系統操作</li>
+				</ul>	
+			</div>
+			<div class="work">
+				<h3>工作經歷</h3>
+				<ul class="digiwn">
+					<h4>鼎新電腦-服務顧問師</h4>
+					<li>系統導入-參與7家系統導入專案</li>
+					<li>客戶系統問題排除-3日內案件結案率80%</li>
+					<li>
+						跨產品線合作專案經驗-與ERP部門合作進行系統模擬驗證
+					</li>
+					<li>擔任系統教學講師</li>
+					<li>個案規格書撰寫</li>
+					<li>個案程式測試</li>
+					<li>資料庫維護</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="skill" id="skill">
+			<div class="sixdraw">
+				<img src="img/六維圖.png" usemap="#planetmap" id="sixdraw">
+				<map name="planetmap" class="sixdrawmap">
+  						
+				</map>
+			</div>
+
+				<div class="skill-description">	
+						<div class="html">
+							<ul>
+								<li>熟悉標籤使用</li>
+								<li>可搭配CSS做切版</li>
+							</ul>
+						</div>
+						<div class="css">
+							<ul>
+								<li>可依照psd檔案進行切版</li>
+								<li>運用Modelbox、Position, Float,Font,Class做排版</li>
+								<li>使用Media Query刻出RWD網頁</li>
+							</ul></div>
+						<div class="js">
+							<ul>
+								<li>
+									熟悉基本語法內建資料型態(string, array, boolean, object, null, set)
+								</li>
+								<li>操作DOM元素</li>
+								<li>使用AJAX與後端資料串接</li>
+								<li>jQuery製作動畫</li>
+								<li>運用JSON格式</li>
+							</ul>
+						</div>
+						<div class="boostrap">
+							<ul>
+								<li>快速切出響應式網站</li>
+								<li>網格運用</li>
+								<li>套用CSS樣式</li>
+							</ul>
+						</div>
+						<div class="vue">
+							<ul>
+								<li>模板語法(v-bind、v-on、v-model、v-for、v-if...)</li>
+								<li>method、computed、watch使用</li>
+							</ul>
+						</div>
+						<div class="git">
+							<ul>
+								<li>基本操作(工作目錄、加入索引、提交版本)
+								</li>
+								<li>工作狀態還原</li>
+								<li>push至github</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		<div class="clearfix"></div>
+		<div class="portofolio" id="portofolio">
+			<a class="portofolio1" href="聯絡簿/index.html"></a>
+			<div class="portofolio2"></div>
+		</div>
+
+		<div class="contact" id="contact">
+			<h2>Contact</h2>
+			<ul class="contact-imformation">
+					<li>林冠廷 TIM-LIN</li>
+					<li class="contact-mail">
+						<img src="img/icons/mail.png">
+						<span>hups900192@gmail.com</span>
+					</li>
+					<li class="contact-phone">
+						<img src="img/icons/mobile.png" >
+						<span>0938713358</span>
+					</li>
+					<li class="contact-city">
+						<img src="img/icons/location.png" >
+						<span>City,Taichung</span>
+					</li>
+					<li ><div class="contact-github">
+						<img src="img/icons/github.png" >
+						<a href="#">GitHub</a>
+					</div>
+					</li>
+				</ul>
+			<form action="MailTo:hups900192@gmail.com">
+				<input id="nameText" type="text" name="Name"
+					   placeholder="Name">
+				<input id="emailText" type="email" name="Email"
+			 		   placeholder="Mail">
+				<input id="telText" type="tel"  name="Phone"
+					   placeholder="Phone Number">
+				<textarea name="bodyText" id="bodyText" cols="30
+						" rows="10"></textarea>
+				<div class="clearfix"></div>
+				<div class="contact-btn">
+					<button class="contact-btn1" type="send">send</button>
+					<button class="contact-btn2" type="reset">reset</button>
+				</div>
+			</form>
+			<p>
+				感謝您蒞臨我的個人履歷網站，若您對我的履歷有興趣可以透過以上聯絡方式以及表單聯繫我，謝謝您。
+			</p>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="footer">
+			<p>Copyright ©2019 Tim All rights reserved</p>
+		</div>
 	</div>
-	<script src="js/all.js"></script>
-</body>
+
+		<script src="js/all.js"></script>
+		<script >loadarea();
+				window.onresize = reload;
+		</script>
+		
 </html>

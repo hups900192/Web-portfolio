@@ -1,0 +1,614 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*-----------------------------------------------------------*/
+.wrap {
+	width: 100%;
+	max-width: 1920px;
+    font-family: "微軟正黑體", sans-serif;
+}
+.clearfix{
+	clear: both;
+}
+
+/*-----------------------------------------------------------*/
+/*..header..*/
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+}
+.logo{
+	width: 30%;
+	margin: 0.5% 0 0 1%;
+    float: left;
+}
+.logo img{
+	float: left;
+	width: 18%;
+}
+.logo h2 {
+  	letter-spacing: 1.5px;
+  	text-decoration: none;
+  	padding-top: 7%;
+ 	color: #eee;
+ 	float: left;
+  	font-size: 100%;
+}
+.menu{
+	color: #eee;
+}
+.menu a:link{
+	color: #eee;
+	text-decoration: none;
+}
+.menu a:visited {
+　	color: #eee;
+	text-decoration: none;
+}
+.menu ul{
+	padding-top: 4%;
+	float: right;
+	width: 38%;
+}
+.menu li{
+	float: left;
+	margin: 0 5% 0 1%;
+    font-weight: 300;
+    display: block;
+}
+.head-button{
+	display: none;
+}
+@media only screen and (min-width: 1920px) {
+	.menu ul{
+		width: 25%;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.menu ul{
+		width: 45%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.menu li{
+		margin: 6% 0 0 5%;
+		font-size: 80%;
+	} 
+	.menu ul{
+		padding-top: 3%;
+		width: 45%;
+	}
+		.logo{
+		width: 30%;
+	}
+	.logo img{
+		width: 28%;
+	}
+	.logo h2{
+		padding-top: 10%;
+		font-size: 100%;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.logo{
+		width: 60%;
+	}
+	.logo img{
+		width: 30%;
+	}
+	.logo h2{
+		padding-top: 10%;
+		font-size: 15px;
+	}
+	.menu{
+		float: right;
+		width: 100%;
+		display: none;
+	}
+	.menu ul{
+		padding-top: 2%;
+		border-top : 1px  solid gray;
+		float: right;
+		width: 100%;
+	}
+	.menu li{
+		float:left;
+		clear: both;
+		margin: 0 0 3% 78%;
+		font-size: 8px;
+		letter-spacing: 0.3px;
+	} 
+	.head-button{
+		display: block;
+		float: right;
+		margin: 6% 6% 0 1%;
+		width: 24px;
+		z-index: ;
+	}
+	.head-button img{
+		width: 70%;
+	}
+}
+/*-----------------------------------------------------------*/
+/*..home..*/
+.home{
+	width: 100%;
+	height: auto;
+	background-image: url("../img/screen.png");
+	background-size: 100% auto ;
+	background-repeat: no-repeat;
+	float: left;
+}
+.home h1{
+	text-align: center;
+	margin-top:18%;
+	color: #3E3C46;
+	font-size: 80px;
+	text-shadow: 0.05em 0.05em 0.08em #E0E0E0;
+}
+.home p{
+	text-align: center;
+	color: #3E3C46;
+	font-size: 50px;
+	text-shadow: 0.05em 0.05em 0.08em #E0E0E0;
+	padding-bottom: 30%;
+}
+@media only screen and (max-width: 768px) {
+	.home h1{
+	font-size: 60px;
+	}
+	.home p{
+	font-size: 35px;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.home h1{
+	font-size: 30px;
+	padding-top: 30px;
+	}
+	.home p{
+	font-size: 10px;
+	}
+}
+/*-----------------------------------------------------------*/
+/*..about..*/
+.about{
+	padding-top: 5%;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.about img{
+	margin-top: 5%;
+	width: 20%;
+}
+.about h3{
+	  letter-spacing: 1.5px;
+	  margin-top: 1%;
+	  font-size: 35px;
+}
+.about-content{
+	width: 100%;
+	margin-top: 1%;
+	font-size: 13px;
+}
+.about-content p{
+	text-align: left;
+	line-height: 130%;
+	padding-top: 3%;
+	margin: 0 18% 0 18%;
+	float: left;
+	font-size: 140%;
+}
+.about-imformation{
+	float: left;
+	margin: 0 0 0 35%;
+	width: 60%;
+}
+.about-imformation li{
+	float:left;
+	padding-left: 0.5%;
+	font-size: 130%;
+}
+.about-imformation img{
+	width: 24px;
+}
+.about-mail a{
+	color: #02c874;
+}
+@media only screen and (max-width: 768px) {
+	.about-imformation{
+	margin: 0 18% 0 18%;
+	float: left;
+	width: 60%;
+	text-align: left;
+	}
+	.about-imformation ul{
+	float: left;
+	}
+	.about-imformation li{
+	width: 100%;
+	margin-top: 1%;
+	clear: both;
+	font-size: 130%;
+	}
+	.about-imformation img{
+	width: 6%;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.about h3{
+	font-size: 100%;
+	}
+	.about-imformation{
+	margin:0 18% 0 18%;
+	float:left;
+	margin:;
+	width: 60%;
+	text-align: left;
+	}
+	.about-imformation ul{
+	float: left;
+	}
+	.about-imformation li{
+	padding-top: 1%;
+	clear: both;
+	font-size:80%;
+	}
+	.about-imformation img{
+	width: 10%;
+	}
+	.about-content p{
+	font-size: 100%;
+	text-indent: 12.8%;
+	}
+}
+/*-----------------------------------------------------------*/
+/*..resume..*/
+.resume{
+	padding-top: 3%; 
+	width: 100%;
+	float: left;
+	margin-bottom: 5%;
+}
+.resume li{
+	list-style-type:square;
+	margin: 1% 0 0 5%;
+}
+.Education,.work{
+	padding: 0 15% 0 15%;
+}
+.resume h3{
+	font-size: 150%;
+	font-weight:bold;
+	margin-top: 5%;
+}
+.resume h4{
+	font-size: 100%;
+	margin-top: 3%;
+	color: 	#004b97;
+}
+.resume p{
+	padding-top:0.5%;
+}
+.mcut p{
+	margin-right: 10%;
+	line-height: 140%;
+}
+@media only screen and (max-width: 414px) {
+	.resume h3{
+	font-size: 120%;
+	font-weight:bold;
+	margin-top: 10%;
+	}
+	.resume h4{
+	font-size: 90%;
+	margin-top: 5%;
+	color: 	#004b97;
+	}
+	.resume ul{
+	margin-top: 3%;
+	}
+	.resume li{
+	font-size: 80%;
+	margin-top: 3%;
+	}
+	.mcut{
+	line-height: 120%;
+	}
+}
+/*-----------------------------------------------------------*/
+/*..skill..*/
+.skill{
+	background-color: #f0f0f0;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+.skill li{
+	list-style-type:decimal;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.sixdraw{
+	margin: 15% 0 15% 0;
+}
+.sixdraw img{
+	display: block;
+	margin:auto;
+	width: 45%;
+}
+.html,.css,.js,.boostrap,.vue,.git{
+	display: none;
+	background-color: #fcfcfc;
+	width: 23%;
+	height: 20%;
+	border-radius: 5%;
+	font-size: 20px;	
+}
+.html{
+ 	position: absolute;
+ 	top: 3%;
+ 	left: 5%;
+}
+.css{
+ 	position: absolute;
+ 	top: 40%;
+ 	left: 3%;
+}
+.js{
+ 	position: absolute;
+ 	top: 3%;
+	right: 5%;
+}
+.boostrap{
+ 	position: absolute;
+ 	bottom: 3%;
+ 	left: 5%;
+}
+.vue{
+	position: absolute;
+ 	top: 40%;
+	right: 3%;
+}
+.git{
+ 	position: absolute;
+ 	bottom: 3%;
+ 	right: 5%;
+}
+@media only screen and (max-width: 1600px) {
+	.html,.css,.js,.boostrap,.vue,.git{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.skill li{
+		margin-left: 30px;
+		margin-top: 8px;
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.skill li{
+		margin-left: 25px;
+		margin-top: 5px;
+		font-size: 8px;
+	}
+	.html,.css,.js,.boostrap,.vue,.git{
+	height: 25%;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.html,.css,.js,.boostrap,.vue,.git{
+	 visibility:hidden;	
+	}
+}	
+/*-----------------------------------------------------------*/
+/*..portofolio..*/
+.portofolio{
+	padding: 10% 0 8% 0;
+	float:left;
+	width: 100%;
+}
+.portofolio1,.portofolio2{
+	background-size: cover ;
+	background-repeat: no-repeat;
+	width: 35.5%;
+	height: 400px;
+	float: left;
+	margin-left: 11%;
+}
+.portofolio1{
+	background-image: url("../img/聯絡簿.png"); 
+}
+.portofolio2{
+	background-image: url("../img/台北夜市統計.png"); 
+}
+.portofolio1:hover,.portofolio2:hover{
+	
+}
+@media only screen and (max-width: 1024px) {
+	.portofolio1,.portofolio2{
+	width: 80%;
+	height: 400px;
+	margin-top: 40px;
+	}
+}
+@media only screen and (max-width: 414px) {
+	.portofolio1,.portofolio2{
+	width: 80%;
+	height: 200px;
+	margin-top: 30px;
+	}
+}
+
+/*-----------------------------------------------------------*/
+/*..contact..*/
+.contact{
+	padding-top: 3%;
+	background-color: #696969;
+	width: 100%;
+	float: left;
+	font-family: "微軟正黑體", sans-serif;
+}
+.contact h2{
+	margin-top: 3%;
+	text-align: center;
+	font-size: 250%;
+	color:#FFFFFF;
+}
+.contact-imformation{
+	float: left;
+	margin: 6% 0 1% 8% ;
+}
+.contact-imformation li{
+	font-size: 100%;
+	margin-bottom: 9%;
+	color: 	#F5F5F5;
+}
+.contact-github{
+	width: 40%;
+}
+.contact-github a{
+	color: #02c874;
+}
+.contact-github a:link {
+	text-decoration:none;
+}
+.contact-github a:hover{
+	color: gold;
+}
+.contact form{
+	margin: 5% 8% 6% 0;
+	float: right;
+	width:50%;
+}
+.contact input ,textarea{
+	font-family: "微軟正黑體", sans-serif;
+	font-size: 15px;
+	border-radius:5px;
+	width: 100%;
+	float: right;
+	margin-top:2%;
+}
+.contact-btn{
+	margin-top:1%;
+	width:100%;
+	float: right;
+}
+.contact-btn1,.contact-btn2{
+	width: 17%;
+	padding: 1.5%;
+	border-radius:5px;
+	background-color: #ffffff;
+	color: #000080;
+	font-size: 15px;
+	border:2px solid #02c874;
+}
+
+.contact-btn1:hover,.contact-btn2:hover{
+	background-color: #02c874;
+	color:#ffffff;
+	border:2px solid #ffffff;
+}
+.contact-btn2{
+	float: right;
+}
+.contact p{
+	float: left;
+	margin: 2% 0 6% 8% ;
+	width: 20%;
+	text-align: justify;
+	font-size: 17px;
+	color: 	#F5F5F5;
+	line-height:120%;
+}
+@media only screen and (max-width: 414px) {
+	.contact-imformation li{
+	font-size: 80%;
+	margin-bottom: 5%;
+	}
+	.contact form{
+	width: 80%;
+	margin:  5% 9.9% 6% 10%;
+	}
+	.contact p{
+	width: 80%;
+	font-size: 80%;
+	}
+	.contact-btn{
+	margin-top:3%;
+	}
+	.contactb-tn1,.contact-btn2{
+	width: 20%;
+	}
+}
+/*-----------------------------------------------------------*/
+/*..footer..*/
+.footer{width: 100%;
+	float: left;
+	text-align: center;
+	background: #000000;
+	color: 	#ffffff;	
+}
+.footer p{
+	margin: 3% 0 3% 0;
+}
+@media only screen and (max-width: 414px) {
+	.footer p{
+	font-size: 20%;
+	}
+}

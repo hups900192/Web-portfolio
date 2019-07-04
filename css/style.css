@@ -117,7 +117,12 @@ img {
 		width: 25%;
 	}
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
+	.menu ul{
+		width: 40%;
+	}
+}
+@media only screen and (max-width: 1080px) {
 	.menu ul{
 		width: 45%;
 	}
@@ -464,21 +469,17 @@ img {
 	width: 100%;
 }
 .portofolio1,.portofolio2{
+	display: block;
 	background-size: cover ;
 	background-repeat: no-repeat;
 	width: 35.5%;
 	height: 400px;
 	float: left;
 	margin-left: 11%;
-}
-.portofolio1{
-	background-image: url("../img/聯絡簿.png"); 
-}
-.portofolio2{
-	background-image: url("../img/台北夜市統計.png"); 
+	transition: 0.5s;
 }
 .portofolio1:hover,.portofolio2:hover{
-	
+	transform: scale(1.1);
 }
 @media only screen and (max-width: 1024px) {
 	.portofolio1,.portofolio2{

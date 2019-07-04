@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
 /*..header-menu選單功能..*/	
- $('.wrap a').click(function(event) {
+ $('.menu a').click(function(event) {
   event.preventDefault();
   var headheight = $(".header").height();
   $('html,body').animate({
